@@ -1,0 +1,82 @@
+
+
+@font-face {
+  font-family: 'FallIsComing';
+  src: local('FallIsComing'), url(./fonts/FallIsComing.ttf) format('truetype');
+}
+
+
+
+.App-header {
+  float: right;
+  width: 80%;
+  background-color: #79B4EB;
+  background:url("dum2.jpg") repeat;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.fonting{
+  position: fixed;
+  /*font-size: calc(10px + 2vmin);*/
+  font-size: 33px;
+  font-weight: bolder;
+  font-family: FallIsComing;
+  text-align: left;
+  padding: 40px;
+  line-height: 1.2;
+}
+
+.App-logo {
+  position: fixed;
+  float: left;
+  height: 32vmin;
+  pointer-events: none;
+}
+
+/*
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 50s linear;
+  }
+}*/
+
+.left {
+  float: left;
+  width: 20%;
+  /*background-image: url("dum4.jpg");*/
+}
+
+
+.gap {
+  position: relative;
+  font-size: 40px;
+  border-width: 60px;
+  border-style: solid;
+  border-color: white;
+  box-shadow: 10px 10px;
+  /*border-image: url("dum.jpg") 30 round;*/
+  border-radius: 15px 50px;
+  background-color: white;
+  line-height: 1.2;
+  
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

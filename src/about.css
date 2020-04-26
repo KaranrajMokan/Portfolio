@@ -1,0 +1,80 @@
+
+
+@font-face {
+    font-family: 'Halimun';
+    src: local('Halimun'), url(./fonts/Halimun.ttf) format('truetype');
+  }
+
+  
+.borders{
+    border-radius: 15px 50px;
+    background-image: url("dum4.jpg");
+    padding: 20px;
+    width: 1000px;
+    height: 650px;
+
+}
+
+.mar{
+    font-family: Halimun;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+img.image {
+    position: absolute;
+    margin-left: -450px;
+    height: 400px;
+    width: 300px;
+    pointer-events: none;
+    opacity: 0.85;
+    padding-left: 10px;
+    float: left;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.text{
+    /*border-style: solid;*/
+    position: absolute;
+    margin-left: 400px;
+    margin-right: 100px;
+    font-family: 'Courier New';
+    font-size: 27px;
+    line-height: 1.5; 
+    text-align: left;
+}
+
+.cross_line{
+    margin-left: 200px;
+    display: inline-block;
+    position: relative;
+    padding: 0.25em 1em;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    text-decoration: none;
+    font-weight: bold;
+    color: #03A9F4;
+}
+
+.cross_line:before, .cross_line:after{
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 2px;
+  height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-color: black;
+  transition: .3s;
+}
+.cross_line:before {left: 7px;}
+.cross_line:after {right: 7px;}
+.cross_line:hover:before{
+  top: 0px;
+  left:0;
+  height: 100%;
+}
+.cross_line:hover:after{
+  top: 0px;
+  right: 0;
+  height: 100%;
+}
