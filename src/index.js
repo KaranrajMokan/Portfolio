@@ -4,27 +4,17 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import About from './about';
+import Project from './project';
 
 class Index extends React.Component{
 
   constructor(props){
     super(props);
     this.state = {value: 0};
-    this.call1 = this.call1.bind(this);
   }
 
-  call1()
-  {
-    this.setState({value:1});
-  }
-  
   render(){
-    let a = this.state.value;
-    if(a == 1)
-    {
-      return (<div><About /></div>)
-    }
-    return (<div><App call1={this.call1}/></div>);
+    return (<div><App/></div>);
   }
 }
 
