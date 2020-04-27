@@ -1,0 +1,28 @@
+
+
+@font-face {
+    font-family: 'ComodoVintage';
+    src: local('ComodoVintage'), url(./fonts/Comodo\ Vintage.ttf) format('truetype');
+  }
+
+.borders1{
+
+    border-radius: 15px 50px;
+    border-style: initial;
+    background-color: white;
+    padding: 20px;
+    width: 1000px;
+    height: 650px;
+}
+
+.mar1{
+    font-family: ComodoVintage;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.mar2{
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+}
