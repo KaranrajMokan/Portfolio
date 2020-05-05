@@ -5,10 +5,14 @@
     src: local('Halimun'), url(./fonts/Halimun.ttf) format('truetype');
   }
 
+@font-face {
+    font-family: 'Geratis';
+    src: local('Geratis'), url(./fonts/Geratis.otf) format('opentype');
+  }
   
 .borders{
     border-radius: 15px 50px;
-    background-image: url("dum4.jpg");
+    background-color: white;
     padding: 20px;
     width: 1000px;
     height: 650px;
@@ -16,8 +20,8 @@
 }
 
 .mar{
-    font-family: Halimun;
-    font-size: 40px;
+    font-family: RetroSans;
+    font-size: 60px;
     margin-top: 20px;
 }
 
@@ -39,6 +43,7 @@ img.image {
     margin-left: 400px;
     margin-right: 100px;
     font-family: 'Courier New';
+    font-weight: bolder;
     font-size: 27px;
     line-height: 1.5; 
     text-align: left;
