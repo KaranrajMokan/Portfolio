@@ -72,7 +72,7 @@ class App extends React.Component {
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 <div className="fonting">
                   <br/>
-                  <h3 onMouseEnter={this.colorchange} onMouseLeave={this.colorchangeback} onClick={this.call0}>Home</h3>
+                  <h3 onMouseEnter={this.colorchange} onMouseLeave={this.colorchangeback} onClick={this.call0}>HOME</h3>
                   <h3 onMouseEnter={this.colorchange} onMouseLeave={this.colorchangeback} onClick={this.call1}>ABOUT</h3>
                   <h3 onMouseEnter={this.colorchange} onMouseLeave={this.colorchangeback} onClick={this.call2}>PROJECTS</h3>
                   <h3 onMouseEnter={this.colorchange} onMouseLeave={this.colorchangeback} onClick={this.call3}>PASSION</h3>
