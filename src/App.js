@@ -4,6 +4,7 @@ import me from './me.png';
 import Intro from './intro';
 import About from './about';
 import Project from './project';
+import Contact from './contact';
 import { Container, Row, Col } from 'reactstrap';
 
 
@@ -62,6 +63,8 @@ class App extends React.Component {
       a = <About />
     else if(this.state.value === 2)
       a = <Project />
+    else if(this.state.value === 4)
+      a = <Contact />
   return(
     <Container>
       <Row>
