@@ -1,0 +1,38 @@
+
+@font-face {
+    font-family: 'Weston';
+    src: local('Weston'), url(./fonts/Weston.ttf) format('truetype');
+  }
+
+
+@font-face {
+    font-family: 'Antique';
+    src: local('Antique'), url(./fonts/Antique.otf) format('opentype');
+  }  
+
+
+@font-face {
+    font-family: 'Underwood';
+    src: local('Underwood'), url(./fonts/Underwood.ttf) format('truetype');
+  }
+
+.bod{
+
+    border-radius: 15px 50px;
+    border-style: initial;
+    background-color: white;
+    padding: 20px;
+    width: 1000px;
+    height: 650px;
+}
+
+.mar_pass{
+
+    font-family: Underwood;
+    text-indent: 50px;
+    font-size: 27px;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 30px;
+    line-height: 1.9;
+}
