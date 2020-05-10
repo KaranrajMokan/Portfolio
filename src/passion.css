@@ -2,32 +2,27 @@
 @font-face {
     font-family: 'Weston';
     src: local('Weston'), url(./fonts/Weston.ttf) format('truetype');
-  }
-
+}
 
 @font-face {
     font-family: 'Antique';
     src: local('Antique'), url(./fonts/Antique.otf) format('opentype');
-  }  
-
+}  
 
 @font-face {
     font-family: 'Underwood';
     src: local('Underwood'), url(./fonts/Underwood.ttf) format('truetype');
-  }
+}
 
 .bod{
-
     border-radius: 15px 50px;
-    border-style: initial;
     background-color: white;
     padding: 20px;
     width: 1000px;
-    height: 650px;
+    height: 1000px;
 }
 
 .mar_pass{
-
     font-family: Underwood;
     text-indent: 50px;
     font-size: 27px;
@@ -35,4 +30,28 @@
     margin-top: 40px;
     margin-left: 30px;
     line-height: 1.9;
+}
+
+
+.bod:before{
+    content: '';
+    position: fixed;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background: rgba(255,255,255,0.1);
+    transition:0.5s;
+    pointer-events: none;
+}
+  
+.bod:hover:before{
+    left:-78%;
+    transform: skewX(-5deg);
+}
+  
+.module-border-wrap {
+    position: relative;
+
+    background: linear-gradient(to right, lightblue, white);
 }
