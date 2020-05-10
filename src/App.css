@@ -20,7 +20,8 @@
   float: right;
   width: 80%;
   background-color: #79B4EB;
-  background:url("dum.jpg") repeat;
+  background:url("./bgs/dum9.jpg") repeat;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -33,34 +34,29 @@
 }
 
 .fonting{
-  position: fixed;
-  /*font-size: calc(10px + 2vmin);*/
+  background-position: initial;
   font-size: 28px;
   font-weight: lighter;
   font-family: Lustro;
   text-align: left;
+  color: white;
   padding: 40px;
   line-height: 1.2;
 }
 
 .App-logo {
-  position: fixed;
   float: left;
   height: 32vmin;
   pointer-events: none;
 }
 
-/*
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 50s linear;
-  }
-}*/
 
 .left {
+  position: fixed;
   float: left;
   width: 20%;
-  /*background-image: url("dum4.jpg");*/
+  background-image: url("./bgs/dummy8.jpg");
+  background-size: cover;
 }
 
 
@@ -75,15 +71,124 @@
   background-color: white;
   line-height: 1.3;
   font-family: Lustro;
+  margin-top: 300px;
+  animation-name: gap-spin;
 }
 
 
-
-@keyframes App-logo-spin {
+/*
+@keyframes gap-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+
+.gap:hover{
+  animation: gap-spin 3s infinite;
 }
+}*/
+
+.foot{
+  margin-right: -700px;
+}
+
+.foot span{
+  background-color: lightgrey;
+}
+
+.pp {
+
+	--offset: 20px;
+	--border-size: 5px;
+	display: block;
+	position: relative;
+	padding: 1.5em 3em;
+  appearance: none;
+	border: 0;
+	background: translucent;
+	text-transform: uppercase;
+	letter-spacing: .25em;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 0;
+	box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+	transition: background .8s ease;
+}
+
+.pp:hover {
+    background: white;
+    opacity: 0.9;
+}
+	
+.pp__horizontal,
+.pp__vertical {
+		position: absolute;
+		top: var(--horizontal-offset, 0);
+		right: var(--vertical-offset, 0);
+		bottom: var(--horizontal-offset, 0);
+		left: var(--vertical-offset, 0);
+		transition: transform .8s ease;
+		will-change: transform;
+}
+
+.pp__horizontal:before, .pp__vertical:before {
+			content: '';
+			position: absolute;
+			border: inherit;
+}
+
+	
+.pp__horizontal {
+		--vertical-offset: calc(var(--offset) * -1);
+		border-top: var(--border-size) solid currentcolor;
+		border-bottom: var(--border-size) solid currentcolor;
+}	
+
+.pp__horizontal:before {
+			top: calc(var(--vertical-offset) - var(--border-size));
+			bottom: calc(var(--vertical-offset) - var(--border-size));
+			left: calc(var(--vertical-offset) * -1);
+			right: calc(var(--vertical-offset) * -1);
+}
+	
+.pp:hover .pp__horizontal {
+		transform: scaleX(0);
+}
+	
+.pp__vertical {
+		--horizontal-offset: calc(var(--offset) * -1);
+		border-left: var(--border-size) solid currentcolor;
+		border-right: var(--border-size) solid currentcolor;
+}
+
+.pp__vertical:before {
+			top: calc(var(--horizontal-offset) * -1);
+			bottom: calc(var(--horizontal-offset) * -1);
+			left: calc(var(--horizontal-offset) - var(--border-size));
+			right: calc(var(--horizontal-offset) - var(--border-size));
+}
+
+.pp:hover .pp__vertical {
+		transform: scaleY(0);
+}
+
+.pp:before{
+    content: '';
+    position: fixed;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background: rgba(255,255,255,0.1);
+    transition:0.5s;
+    pointer-events: none;
+}
+  
+.pp:hover:before{
+    left:-78%;
+    transform: skewX(-5deg);
+}
+  
