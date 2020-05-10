@@ -1,0 +1,169 @@
+
+@font-face {
+    font-family: 'Coventry';
+    src: local('Coventry'), url(./fonts/Coventry.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Silverfake';
+    src: local('Silverfake'), url(./fonts/Silverfake.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Belladona';
+    src: local('Belladona'), url(./fonts/Belladona.ttf) format('truetype');
+}
+
+
+.unq_btn {
+    font-family: Belladona;
+    text-align: left;
+    margin-left: 130px;
+}
+
+.contro{
+    margin-left: -15px;
+}
+
+.unq_btn .fa-stack-1x {
+    color: white;
+    font-size: 18px;
+}
+
+.unq_btn .fa-stack-2x {
+    transition: .3s;
+}
+
+.unq_btn .twitter {
+    color: #74c1f8;
+    margin-left: -3px;
+    font-size: 70px;
+}
+
+.unq_btn .twitter_color{
+    color: white;
+    font-size: 40px;
+}
+
+.unq_btn .insta{
+    color: #E1306C;
+    margin-left: -3px;
+    font-size: 70px;
+}
+
+.unq_btn .insta_color{
+    color: white;
+    font-size: 45px;
+}
+
+.unq_btn .fb{
+  color: #668ad8;
+  margin-left: -3px;
+  font-size: 70px;
+}
+
+.unq_btn .fb_color{
+    color: white;
+    font-size: 40px;
+}
+
+.unq_btn .gmail{
+  color: #D44638;
+  margin-left: -3px;
+  font-size: 70px;
+}
+
+.unq_btn .gmail_color{
+    color: white;
+    font-size: 40px;
+}
+
+.unq_btn .tele{
+    color: #0088cc;
+    margin-left: -2px;
+    font-size: 70px;
+}
+  
+.unq_btn .tele_color{
+      color: white;
+      font-size: 41px;
+}
+
+
+.unq_btn .github{
+    color: #211F1F;
+    margin-left: -3px;
+    font-size: 70px;
+}
+  
+.unq_btn .github_color{
+    color: white;
+    font-size: 40px;
+}
+
+.unq_btn .linkedin{
+    color: #0e76a8;
+    margin-left: -3px;
+    font-size: 70px;
+}
+  
+.unq_btn .linkedin_color{
+    color: white;
+    font-size: 38px;
+}
+
+.unq_btn .wapp{
+    color: #4FCE5D;
+    margin-left: -3px;
+    font-size: 70px;
+}
+  
+.unq_btn .wapp_color{
+    color: white;
+    font-size: 42px;
+}
+
+.unq_btn a:hover .fa-stack-2x {
+    -ms-transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+
+.bod1{
+    border-radius: 15px 50px;
+    border-style: initial;
+    background-color: white;
+    padding: 20px;
+    width: 900px;
+    height: 650px;
+    color: black;
+}
+
+
+.bod1:before{
+    content: '';
+    position: fixed;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background: rgba(255,255,255,0.1);
+    transition:0.5s;
+    pointer-events: none;
+}
+  
+.bod1:hover:before{
+    left:-78%;
+    transform: skewX(-5deg);
+}
+
+
+.bod1:hover {
+    background: #333;
+    color: #fff;
+}
+
+.bod1:hover::after{
+    color: black;
+}
