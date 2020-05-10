@@ -4,16 +4,23 @@ import './project.css';
 
 export default function Project(){
 
+    function hello(e){
+        e.target.style.backgroundSize = '100% 88%';
+    }
+
+    function bye(e){
+        e.target.style.backgroundSize = '';
+    }
+
     return(
 
     <div>
         <br/><br/><br/><br/><br/><br/>
-        <div className="borders1">
+        <div className="borders1 one ">
             <div className="mar1">
                 <div className="mar2">
-                Projects
+                <span className="underline--magical" onMouseEnter={hello} onMouseLeave={bye}>Projects</span>
                 </div>
-                <br/>
                 <div className="mar3">
                     I have done projects in languages such as
                     C, C++, Java, Python and C#.
