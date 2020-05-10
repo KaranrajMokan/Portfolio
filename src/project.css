@@ -12,11 +12,13 @@
 
 .borders1{
 
-    border-radius: 15px 50px;
+    display:inline-block;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     border-style: initial;
-    background-color: white;
+    background:rgb(237, 238, 230);
+    opacity: 0.95;
     padding: 20px;
-    width: 1000px;
+    width: 900px;
     height: 650px;
 }
 
@@ -39,6 +41,7 @@
     font-size: 25px;
     text-align: left;
     margin-left: 50px;
+    margin-top: 40px;
     line-height: 1.9;
 }
 
@@ -62,3 +65,25 @@
     font-family: RetroSans;
     font-size: 28px;
 }
+
+.one {
+    border: solid 5px grey;
+}
+
+.borders1:before{
+    content: '';
+    position: fixed;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background: rgba(255,255,255,0.1);
+    transition:0.5s;
+    pointer-events: none;
+}
+  
+.borders1:hover:before{
+    left:-78%;
+    transform: skewX(-5deg);
+}
+  
