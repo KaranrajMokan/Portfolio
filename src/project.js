@@ -29,7 +29,7 @@ export default function Project(){
                     MongoDB and Neo4j(GraphDB). 
                     The tools which are used in the making of the projects are
                     Visual Studio Code, Neo4j, Spyder and Jupyter Notebook.
-                    The projects can be found in my Git Repository tab below...
+                    The projects can be found in my Git Repository tab below.
                     <br/><br/>
                 </div>
                     
