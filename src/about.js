@@ -4,19 +4,30 @@ import karan from './karan.jpg';
 
 export default function About(){
 
+    function hello(e){
+        e.target.style.backgroundSize = '100% 88%';
+    }
+
+    function bye(e){
+        e.target.style.backgroundSize = '';
+    }
+
     return(
 
-        <div className="borders">
+    <div>
+        <br/><br/><br/><br/><br/><br/>
+            <div className="borders repeating-linear">
+                
             <div className="mar">
-            About Me <br/><br/>
+            <span className="underline--magical" onMouseEnter={hello} onMouseLeave={bye}>About Me</span> <br/><br/>
             </div>
             <div>
                 <img src={karan} className="image" />
                 <p className="text">
                     I'm Karanraj M. I'm currently doing 
-                    Msc degree in Software Systems at PSG College of Technology.
-                    I live in Tiruchengode. I'm currently interning as a Full 
-                    Stack Developer at ThoughtWorks India for a period of six months.
+                    Msc degree in Software Systems at PSG College of Technology. I'm 20.
+                    I live in Tiruchengode. I will be interning as a Full 
+                    Stack Developer at ThoughtWorks India for a period of six months(late 2020).
                     <br></br><br/>
                     <a href="./documents/Resume.pdf" target="_blank"
                     rel="noopener noreferrer" className="cross_line">
@@ -24,7 +35,9 @@ export default function About(){
                     </a>
                 </p>
             </div>
-        </div>
+            </div>
+        <br/><br/><br/>
+    </div>
 
     )
 }
