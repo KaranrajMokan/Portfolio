@@ -1,23 +1,46 @@
 
-
 @font-face {
     font-family: 'Halimun';
     src: local('Halimun'), url(./fonts/Halimun.ttf) format('truetype');
-  }
+}
 
 @font-face {
     font-family: 'Geratis';
     src: local('Geratis'), url(./fonts/Geratis.otf) format('opentype');
-  }
-  
+}
+ 
+@font-face {
+  font-family: 'Fohligten';
+  src: local('Fohligten'), url(./fonts/Foglihten.otf) format('opentype');
+}
+
+
 .borders{
     border-radius: 15px 50px;
     background-color: white;
     padding: 20px;
     width: 1000px;
     height: 650px;
-
+    //border-style: dotted;
 }
+
+.borders:before{
+  content: '';
+  position: fixed;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background: rgba(255,255,255,0.1);
+  transition:0.5s;
+  pointer-events: none;
+}
+
+.borders:hover:before{
+  left:-78%;
+  transform: skewX(-5deg);
+}
+
 
 .mar{
     font-family: RetroSans;
@@ -26,6 +49,7 @@
 }
 
 img.image {
+    border-radius: 50% 10% 40%;
     position: absolute;
     margin-left: -450px;
     height: 400px;
@@ -35,6 +59,7 @@ img.image {
     padding-left: 10px;
     float: left;
     box-shadow: 10px 10px 5px grey;
+    opacity: 1;
 }
 
 .text{
@@ -82,4 +107,24 @@ img.image {
   top: 0px;
   right: 0;
   height: 100%;
+}
+
+.underline--magical {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+
+
+.repeating-linear {
+  border: 12px solid black;
+  border-image: repeating-linear-gradient( 45deg, black, black 1%, grey 10%, grey 8%) 10;
+}
+
+.repeating-linear:hover {
+  border-image: repeating-linear-gradient( 45deg, grey, grey 1%, black 10%, black 8%) 10;
+  background-color: whitesmoke;
+  opacity: 0.98;
 }
