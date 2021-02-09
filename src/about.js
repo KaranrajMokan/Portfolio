@@ -25,9 +25,8 @@ export default function About(){
                 <img src={karan} className="image" />
                 <p className="text">
                     I'm Karanraj M. I'm currently doing 
-                    Msc degree in Software Systems at PSG College of Technology. I'm 20.
-                    I live in Tiruchengode. I will be interning as a Full 
-                    Stack Developer at ThoughtWorks India for a period of six months(late 2020).
+                    Msc degree in Software Systems at PSG College of Technology. I'm 21.
+                    I live in Tiruchengode. I was a SDE intern at ThoughtWorks India during the late 2020 from July to December.
                     <br></br><br/>
                     <a href="./documents/Resume.pdf" target="_blank"
                     rel="noopener noreferrer" className="cross_line">
