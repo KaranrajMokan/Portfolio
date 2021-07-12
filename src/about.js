@@ -1,6 +1,7 @@
 import React from 'react';
 import './about.css';
 import karan from './karan.jpg';
+import resume from './Resume.pdf';
 
 export default function About(){
 
@@ -24,12 +25,12 @@ export default function About(){
             <div>
                 <img src={karan} className="image" />
                 <p className="text">
-                    I'm Karanraj M. I'm currently doing 
+                    I'm Karanraj M. I'm currently doing my final year
                     Msc degree in Software Systems at PSG College of Technology. I'm 21.
                     I live in Tiruchengode. I was a SDE intern at ThoughtWorks India during the late 2020 from July to December.
                     <br></br><br/>
-                    <a href="./documents/Resume.pdf" target="_blank"
-                    rel="noopener noreferrer" className="cross_line">
+                    <a href={resume} target="_blank"
+                    className="cross_line">
                         RESUME
                     </a>
                 </p>
